@@ -5,13 +5,13 @@ Yikun Zhang, Changqiu Xu, Shiyu Zhu, et al.
 ## Abstract
 > Three-dimensional digital subtraction angiography (3D-DSA) is a key technique for the diagnosis and treatment of cerebrovascular diseases. The conventional dense-view acquisition is time-consuming and delivers a considerable radiation dose to both patients and doctors, making sparse-view acquisition a highly promising solution. However, sparse sampling induces severe streak artifacts in 3D-DSA images, thereby affecting subsequent treatment procedures. To address these issues, this study presents a Progressive Structure-Enhanced Restoration (PSER) framework for sparse-view 3D-DSA. First, a 3D DNN is designed to inherently exploit inter-slice and intra-slice correlations for coarse artifact removal and image restoration. The Discrete Wavelet Transform and Weighted Convolution are integrated to encourage the 3D DNN to focus on the restoration of highfrequency vascular structures in the frequency domain and spatial domain, respectively. Second, a 2.5D DNN is employed to further restore fine-grained vascular details while avoiding discontinuities along the head-foot direction in 3D-DSA images. Considering that brain vessels exhibiting snake-like morphological characteristics, dynamic snake convolution is integrated to adaptively capture complex in-plane vascular tortuosity through topology-aware deformation, thereby improving vessel continuity in the axial plane. Qualitative and quantitative results on both a simulation dataset and a clinical dataset demonstrate the promising performance of the proposed PSER method in artifact removal, structure restoration and continuity preservation.
 
-## Motivation Diagram
+## Motivation
 <p align="center"> <img src="./assets/Motivation.png" width="100%"> </p>
 
-## WorkFlow Diagram
+## Workflow
 <p align="center"> <img src="./assets/Workflow.png" width="100%"> </p>
 
-## Architecture Diagram
+## Network Architecture
 <p align="center"> <img src="./assets/Network.png" width="100%"> </p>
 
 ## Visual Comparisons
@@ -109,5 +109,6 @@ to generate data for stage II. The dataset directory of Stage II should be organ
 Code and model configurations are tested under Python 3.10+, PyTorch 2.0.0
 
 ## Acknowledgment
+
 
 This repository is the official implementation of the paper: "Progressive Structure-Enhanced Restoration Framework for Sparse-View 3D-DSA Reconstruction", featuring optimized code structure, comprehensive documentation, and enhanced model reproducibility.
